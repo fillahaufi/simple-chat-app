@@ -20,7 +20,6 @@ public class ThreadClient extends Thread {
             this.ois = new ObjectInputStream(this.socket.getInputStream());
             this.threadServer = threadServer;
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         
@@ -33,10 +32,8 @@ public class ThreadClient extends Thread {
 
                 this.threadServer.sendToAll(msg);
             } catch (ClassNotFoundException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -47,7 +44,6 @@ public class ThreadClient extends Thread {
             this.oos.writeObject(msg);
             this.oos.flush();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

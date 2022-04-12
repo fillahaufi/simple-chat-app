@@ -16,12 +16,10 @@ public class ThreadClient extends Thread {
         while(true) {
             try {
                 Message msg = (Message) this.ois.readObject();
-                System.out.println(msg.getSender() + ": " + msg.getText());
+                System.out.println(msg.getContent());
             } catch (ClassNotFoundException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
