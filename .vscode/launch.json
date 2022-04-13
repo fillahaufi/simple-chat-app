@@ -15,14 +15,14 @@
 			"name": "Launch ChatClient",
 			"request": "launch",
 			"mainClass": "Client.ChatClient",
-			"projectName": "simple-chat-app_70755bac"
+			"projectName": "simple-chat-app"
 		},
 		{
 			"type": "java",
 			"name": "Launch ChatServer",
 			"request": "launch",
 			"mainClass": "Server.ChatServer",
-			"projectName": "simple-chat-app_70755bac"
+			"projectName": "simple-chat-app"
 		}
 	],
 	"compounds": [
